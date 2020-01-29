@@ -1,0 +1,294 @@
+
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    outline: none;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-size: 1.6rem;/*16px now*/    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-shadow: rgba(0,0,0,.1) 0 0 1px;
+
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    min-width: 21rem;
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.7);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background: linear-gradient(white,rgb(220, 220, 220));
+}
+
+header .img_wrapper {
+    min-height: 5rem;
+    min-width: 5rem;
+    border-radius: 0.5rem;
+}
+
+header .img_wrapper img{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+header .cart .img_wrapper{
+    background-color: #c36cbb;
+    margin-right: 0.3rem;
+
+
+}
+
+header .cart .img_wrapper img{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+.logo-container, .nav-links, .cart{
+    display: flex;
+}
+
+.logo{
+    font-weight: 500;
+    margin: 1.5rem 0 0 1rem;
+}
+
+.nav-links{
+    justify-content: space-around;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.nav-link{
+    color: #5f5f79;
+}
+
+.logo-container {
+    flex: 1;    
+}
+
+nav{
+    flex: 2;    
+}
+
+
+.cart{    
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
+.nav-links_small{
+
+    border-radius: 0.5rem;
+    background-color: rgb(210,210,210);
+    background: linear-gradient(white,rgb(220, 220, 220));
+    box-shadow: 0 3px 4px rgba(0,0,0,0.7);
+    min-width: 21rem;
+    display: none;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0.5rem auto 1rem auto;
+    padding: 0;
+}
+
+@media only screen and (max-width: 940px) {
+    nav{
+        display: none;
+    }
+
+    .logo-container{
+        flex: 3;
+    }
+
+    .logo{
+        margin: 1rem;
+    }
+
+    .nav-links_small{
+        display: flex;
+    }
+    .presentation {
+        flex-direction: column;
+    }
+    .cover{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .introduction .intro-text h1{
+        font-size: 2.5rem;
+    }
+    .introduction .intro-text p{
+        font-size: 1.5rem;
+    }
+    .cta-select{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .cta{
+        margin-top: 0.5rem;
+        padding-top: 2rem;
+        text-align: center; 
+    } 
+
+    .laptop-select{       
+        right: 40%;  
+        padding-bottom: 3rem;
+    }
+}
+
+/* testttttttttttttttt */
+
+
+
+.bd-example{
+    background-color: rgb(114, 139, 137);
+    background-image: linear-gradient(rgb(175, 218, 214),rgb(66, 78, 77));
+    margin-top: 2rem;
+    min-height: 360px;
+}
+
+.carousel-item{
+    min-height: 350px;
+    padding-bottom: 20px;
+}  
+
+.test{
+    display: flex;
+}
+
+
+
+.test img{
+    max-height: 360px;
+} 
+
+.item_header{
+    margin-top: 3rem;
+    padding:1rem;
+    padding-left: 0;
+    color: white;
+}
+
+.item_header p{
+    margin-top: 1rem;
+    color: black;
+}
+
+
+.cta{
+    height: 30px;
+    position: relative;
+    display: block;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.cta-select{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    width: 15rem;
+    height: 5rem;
+    outline: none !important;
+    font-weight: 500;
+    color: #333;
+    margin-right: 3rem;
+    transition: all 0.2s;
+
+
+}
+
+
+.cta-select:hover,
+.cta-add:hover{
+    background-color: rgba(0,0,0,.2);
+}
+
+.cta-add{
+    border: 2px solid #c36cbb;
+    background: #c36cbb;
+    width: 15rem;
+    height: 5rem;
+    outline: none !important;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2s;
+
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .test{
+        display: block;
+        height: auto;
+    }
+
+    .item_header{
+       text-align: center;
+    }
+    
+    .test img{
+        display: block;
+        margin: 0 auto;
+        max-height: 200px;
+    }
+    .item_header p{
+        height: 120px;
+    }
+    .carousel-item{
+        height: 600px;
+    }
+    .bd-example{
+        height: 600px !important;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .nav-links_small{
+        font-size: 1.4rem;
+        justify-content: center;
+    }
+    .nav-links_small .nav-link{
+        padding: 0.4rem;
+    }
+
+    .cta-select{
+        margin-right: 0;
+    }
+
+    .bd-example{
+       height: 520px;
+    }
+
+
+}
+
+
